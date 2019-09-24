@@ -1,0 +1,61 @@
+.addcontent{
+	position: relative;
+}
+.addcontent .delect{
+	position: absolute;
+	top: .6rem;
+	right: .4rem;
+}
+.addcontent .delect i{
+	display: inline-block;
+	width: .44rem;
+	height: .44rem;
+	background: url(../../src/assets/images/home/cut.png) no-repeat left top;
+	background-size: 100%;
+}
+.addcontent .upLoad{
+	width: 6.66rem;
+	height: 3.33rem;
+	border-radius: .1rem;
+	background: #eee;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: .5rem;
+	box-sizing: border-box;
+	position: relative;
+}
+.addcontent .upLoad span{
+	display: inline-block;
+	width: .8rem;
+	height: .8rem;
+	background: url(../../src/assets/images/home/upload.png) no-repeat left top;
+	background-size: 100%;
+}
+.addcontent .upLoad p{
+	font-size: .36rem;
+	color: #999;
+}
+.addcontent .upLoad img{
+	width: 6.66rem;
+	height: 3.33rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: .1rem;
+	object-fit:cover;
+}
+.addcontent .upLoad .hiddenInput{
+	display: none;
+}
+.addcontent ul{
+	margin: 0 .4rem;
+	margin-bottom: 1rem;
+}
+.addcontent ul li{
+	font-size: .36rem;
+	padding: .5rem 0 .2rem 0;
+	border-bottom: 1px solid #eee;
+}
+.addcontent ul li input{
+	font-size: .36rem;
+}

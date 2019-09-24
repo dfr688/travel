@@ -1,0 +1,157 @@
+.chooseType{
+	padding-bottom: .4rem;
+}
+.chooseType .type{
+	margin: 0 .4rem;
+}
+.chooseType .type>li{
+	padding: .3rem 0;
+	border-bottom: 1px solid #eee;
+}
+.chooseType .type>li:last-child{
+	border-bottom: none;
+}
+/* chooseOption */
+.chooseType .type .chooseOption{
+	display: flex;
+}
+.chooseType .type .chooseOption .left{
+	flex: 1;
+	font-size: .46rem;
+}
+.chooseType .type .chooseOption .left img{
+	width: .64rem;
+	height: .64rem;
+	margin-bottom: -.12rem;
+	margin-right: .2rem;
+}
+.chooseType .type .chooseOption .left input{
+	color: #333;
+	font-size: .46rem;
+	font-weight: bold;
+	width: 2rem;
+}
+.chooseType .type .chooseOption .right{
+	flex: 1;
+	text-align: right;
+	font-size: .46rem;
+}
+.chooseType .type .chooseOption .right span{
+	color: #ea5455;
+	font-size: .46rem;
+	font-weight: bold;
+	margin-right: .1rem
+}
+.chooseType .type .chooseOption .right input{
+	width: 1.5rem;
+	font-size: .46rem;
+	color: #ea5455;
+	font-weight: bold;
+}
+.chooseType .type .chooseOption .right input::-webkit-input-placeholder {
+    color: #ea5455;
+}
+.chooseType .type .chooseOption .right input:-moz-placeholder {
+    color: #ea5455;
+}
+.chooseType .type .chooseOption .right input:-ms-input-placeholder {
+    color: #ea5455;
+}
+/* options */
+.chooseType .type .options ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.chooseType .type .options ul li{
+	text-align: center;
+	width: 1.67rem;
+}
+.chooseType .type .options ul li img{
+	width: .64rem;
+	height: .64rem;
+	pointer-events: none;/* 禁止长按图片出现手机自带菜单 */
+}
+.chooseType .type .options ul li p{
+	font-size: .32rem;
+	color: #333;
+}
+/* calendar */
+.chooseType .type .calendar{
+	color: #333;
+	font-size: .32rem;
+	font-weight: bold;
+}
+.chooseType .type .calendar span{
+	width: .42rem;
+	height: .42rem;
+	background: url(../../src/assets/images/detail/calendar.png) no-repeat left top;
+	background-size: 100%;
+}
+/* cashType */
+.chooseType .type .cashType{
+	color: #333;
+	font-size: .32rem;
+}
+.chooseType .type .cashType span{
+	width: .44rem;
+	height: .44rem;
+	background: url(../../src/assets/images/detail/pay.png) no-repeat left top;
+	background-size: 100%;
+}
+/* remarks */
+.chooseType .type .remarks{
+	font-size: .32rem;
+}
+.chooseType .type .remarks span{
+	width: .36rem;
+	height: .39rem;
+	background: url(../../src/assets/images/detail/remark.png) no-repeat left top;
+	background-size: 100%;
+}
+.chooseType .type .remarks input{
+	font-size: .32rem;
+	margin-left: .1rem;
+}
+/* uploadPhoto */
+.chooseType .type .uploadPhoto span{
+	width: .44rem;
+	height: .36rem;
+	background: url(../../src/assets/images/detail/photograph.png) no-repeat left top;
+	background-size: 100%;
+	vertical-align: top;
+}
+.chooseType .type .uploadPhoto div{
+	display: inline-block;
+	height: 1.4rem;
+} 
+/* 支付方式弹框 */
+.chooseType .mint-popup div{
+	width: 7.5rem;
+	padding: 0 .4rem;
+	box-sizing: border-box;
+	font-size: .32rem;
+	color: #333;
+	font-weight: bold;
+}
+.chooseType .mint-popup div p{
+	padding: .3rem 0;
+	border-bottom: 1px solid #eee;
+}
+.chooseType .mint-popup div ul li{
+	padding: .3rem 0;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+}
+.chooseType .mint-popup div ul li:last-child{
+	border-bottom: none;
+}
+
+/* 共用部分 */
+.chooseType .type .calendar span,
+.chooseType .type .cashType span,
+.chooseType .type .remarks span,
+.chooseType .type .uploadPhoto span{
+	display: inline-block;
+	margin-right: .24rem;
+	margin-bottom: -.06rem;
+}

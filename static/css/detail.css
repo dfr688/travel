@@ -1,0 +1,39 @@
+.detail .setting{
+	width: 7.5rem;
+	height: 5.16rem;
+	background-image: linear-gradient(45deg, #ea5455 0%, #f7976c 100%), linear-gradient(#f8f8f8, #f8f8f8);
+}
+.detail .setting .setUp{
+	position: absolute;
+	top: .6rem;
+	right: .4rem;
+}
+.detail .setting .setUp i{
+	display: inline-block;
+	width: .4rem;
+	height: .46rem;
+	background: url(../../src/assets/images/detail/set.png) no-repeat left top;
+	background-size: 100%;
+}
+.detail .setting .money{
+	font-size: .24rem;
+	color: #fff;
+	margin: 0 .4rem;
+}
+.detail .setting .money .expend p{
+	font-size: .48rem;
+	font-weight: bold;
+	margin-top: .1rem;
+}
+.detail .setting .money .budget{
+	display: flex;
+	margin-top: .8rem;
+}
+.detail .setting .money .budget div{
+	flex: 1;
+	color: #f1f1f1;
+}
+.detail .setting .money .budget div span{
+	color: #fff;
+	font-size: .26rem;
+}

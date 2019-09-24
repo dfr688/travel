@@ -1,0 +1,87 @@
+.stats .backdrop{
+	width: 7.5rem;
+	height: 3.94rem;
+	background-image: linear-gradient(45deg, #ea5455 0%, #f7976c 100%), linear-gradient(#f8f8f8, #f8f8f8);
+}
+.stats .backdrop .contain{
+	display: flex;
+	margin: 0 .4rem;
+	font-size: .32rem;
+	color: #fff;
+}
+.stats .backdrop .contain p{
+	flex: 1;
+	margin-top: .14rem;
+}
+.stats .backdrop .contain p i{
+	display: inline-block;
+	width: .19rem;
+	height: .14rem;
+	background: url(../../src/assets/images/home/down.png) no-repeat left top;
+	background-size: 100%;
+	margin-left: .1rem;
+}
+.stats .backdrop .contain .year_month{
+	flex: 1;
+	text-align: right;
+}
+.stats .backdrop .contain .year_month span{
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: .3rem;
+	width: 1.2rem;
+	height: .6rem;
+	display: inline-block;
+	line-height: .6rem;
+	text-align: center;
+}
+.stats .backdrop .contain .year_month span.active{
+	background: #eb5756;
+	border: none;
+	border: 1px solid #eb5756;
+}
+.stats .backdrop .contain .year_month .year{
+	margin-right: .2rem;
+}
+.stats .ways{
+	width: 6.7rem;
+	height: 5.2rem;
+	background-color: #fff;
+	box-shadow: 0px 5px 15px 1px rgba(2, 0, 0, 0.15);
+	border-radius: .1rem;
+	margin: 0 auto;
+	margin-top: -1.2rem;
+}
+.stats .ways ul{
+	display: flex;
+}
+.stats .ways ul li{
+	flex: 1;
+	font-size: .32rem;
+	text-align: center;
+	padding: .3rem 0;
+	color: #999;
+}
+.stats .ways ul li.active{
+	color: #333;
+}
+/* 年份选择弹框 */
+.stats .mint-popup-bottom{
+	width: 100%;
+}
+.stats .mint-popup-bottom .frame_upper{
+	display: flex;
+	font-size: .32rem;
+	padding: .3rem .4rem;
+	border-bottom: 1px solid #eee;
+	font-weight: bold; 
+}
+.stats .mint-popup-bottom .frame_upper span{
+	flex: 1;
+	color: #333;
+}
+.stats .mint-popup-bottom .frame_upper p{
+	flex: 1;
+	text-align: right;
+	color: #ea5656;
+}
