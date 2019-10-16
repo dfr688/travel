@@ -14,8 +14,8 @@
 	background-size: 100%;
 }
 .addcontent .upLoad{
-	width: 6.66rem;
-	height: 3.33rem;
+	width: 3rem;
+	height: 3rem;
 	border-radius: .1rem;
 	background: #eee;
 	margin: 0 auto;
@@ -36,8 +36,8 @@
 	color: #999;
 }
 .addcontent .upLoad img{
-	width: 6.66rem;
-	height: 3.33rem;
+	width: 3rem;
+	height: 3rem;
 	position: absolute;
 	left: 0;
 	top: 0;

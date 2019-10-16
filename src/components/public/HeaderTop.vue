@@ -28,7 +28,6 @@ export default {
 	.headerTop{
 		text-align: center;
 		font-size: .46rem;
-		font-weight: bold;
 		padding: .5rem 0.4rem;
 		position: relative;
 	}

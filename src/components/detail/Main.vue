@@ -5,10 +5,8 @@
 				<div id="myChart" :style="{width: '100%', height: '100%'}"></div>
 			</div>
 		</div>
+    <div class="height_20"></div>
 		<div class="detailList">
-			<div class="date_money">
-				<!-- <span>{{ 111 }}</span> --><!-- <p>¥ 560.50</p> -->
-			</div> 
 			<ul class="content">
 				<li v-for="(item,index) in recordingInfo" :key="item.id">
 					<div class="left">
@@ -42,7 +40,7 @@
 
 <script>
 	import Chart from '../public/Chart'
-	
+
 	const options = [
 		{
 			src: require("../../assets/images/detail/type_01.png"),
@@ -171,7 +169,7 @@ export default {
   	  recordingInfo:function(newVal,oldVal){
   		  for(let i=0;i<newVal.length;i++){
 			if(this.percent.length<=4){
-				this.percent.push({value:newVal[i].amount.toString(),name:options[newVal[i].type - 1].title}) 
+				this.percent.push({value:newVal[i].amount.toString(),name:options[newVal[i].type - 1].title})
 			}
   		  }
   		  // console.log(this.percent);
@@ -218,7 +216,7 @@ export default {
 					normal:{
 						color: function(params) {
 							// 自定义颜色
-							var colorLists = ["#eb5b57","#f5af36","#f3d035","#87CEEB","#AFEEEE"];
+							var colorLists = ["#f8a6ff","#AFEEEE","#eb5b57","#f3d035","#4175f8"];
 							return colorLists[params.dataIndex];
 						}
 					}
@@ -229,7 +227,7 @@ export default {
 	  }
   },
   mounted() {
-	 
+
   }
 }
 </script>

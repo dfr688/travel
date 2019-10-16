@@ -18,12 +18,12 @@ export default {
   watch:{
 	  statistics:function(newVal,oldVal){
 		  for(let i=0;i<newVal.length;i++){
-		  	this.percent.push({value:newVal[i].totalAmount.toString()}) 
+		  	this.percent.push({value:newVal[i].totalAmount.toString()})
 		  }
 		  // console.log(this.percent);
 		 this.drawLine()
 	  },
-	   
+
   },
 methods: {
 	drawLine(){
@@ -65,7 +65,7 @@ methods: {
 					normal:{
 						color: function(params) {
 							// 自定义颜色
-							var colorLists = ["#eb5b57","#f5af36","#f3d035","#87CEEB","#AFEEEE"];
+							var colorLists = ["#f8a6ff","#AFEEEE","#eb5b57","#f3d035","#4175f8"];
 							return colorLists[params.dataIndex];
 						}
 					}
@@ -76,7 +76,7 @@ methods: {
 	}
 },
 mounted() {
-	
+
 }
 }
 </script>

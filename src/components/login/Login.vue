@@ -7,7 +7,7 @@
 	</Com>
 	<ul>
 		<li>
-			<input type="text" placeholder="请输入手机号码" v-model="phone"/>
+			<input type="tel" placeholder="请输入手机号码" v-model="phone"/>
 		</li>
 		<li>
 			<input type="password" placeholder="请输入密码" v-model="psd"/>
@@ -21,7 +21,7 @@
 	import Com from '../public/Com'
 	import SureButton from '../public/SureButton'
 	import { Toast } from 'mint-ui';
-	
+
 export default {
   name: '',
   data () {
@@ -67,7 +67,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
  .login .tip a{
-	 color: #ea5455;
+	 color: #0396ff;
  }
  .login ul{
 	 margin: 0 .4rem;

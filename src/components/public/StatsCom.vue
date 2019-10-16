@@ -34,21 +34,21 @@
 		</div>
   </div>
 </template>
-	
+
 <script>
 	import Chart from './Chart'
-	
-	
-	
+
+
+
 export default {
   name: '',
   data () {
     return {
-			
+
     }
   },
 	methods: {
-		
+
 	},
   props: [
 	 "statistics",
@@ -73,7 +73,7 @@ export default {
 	  Chart
   },
 	mounted() {
-		
+
 	}
 }
 </script>
@@ -138,8 +138,8 @@ export default {
 		margin-left: -3.75rem;
 	}
 	.statscom .wrap .cost{
-		color: #ea5455;
-		font-size: .32rem;
+		color: #0396ff;
+		font-size: .26rem;
 		text-align: center;
 		position: absolute;
 		top: 1.6rem;

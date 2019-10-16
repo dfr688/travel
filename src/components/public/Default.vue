@@ -1,7 +1,7 @@
 <template>
   <div class="noMes">
 		<div></div>
-		<p>暂无数据</p>
+		<p>什么都没有，快来记一笔吧!</p>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   name: '',
   data () {
     return {
-      
+
     }
   }
 }
@@ -31,6 +31,7 @@ export default {
 	}
 	.noMes p{
 		color: #999;
-		font-size: .36rem;
+		font-size: .22rem;
+    margin-top: .1rem;
 	}
 </style>

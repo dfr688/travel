@@ -5,7 +5,7 @@
 			<p>{{ title }}</p>
 			<i></i>
 			<slot></slot>
-		</div> 
+		</div>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   name: '',
   data () {
     return {
-      
+
     }
   },
 	props:[
@@ -55,7 +55,7 @@ export default {
 		display: inline-block;
 		width: .88rem;
 		height: .1rem;
-		background: url(../../assets/images/public/underline.png) no-repeat left top;
-		background-size: 100%;
+		background: #0396ff;
+    border-radius: .2rem;
 	}
 </style>

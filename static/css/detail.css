@@ -1,7 +1,7 @@
 .detail .setting{
-	width: 7.5rem;
-	height: 5.16rem;
-	background-image: linear-gradient(45deg, #ea5455 0%, #f7976c 100%), linear-gradient(#f8f8f8, #f8f8f8);
+	width: 100%;
+	height: 3.4rem;
+	background-image: linear-gradient(45deg, #0396ff 0%, #abdcff 100%), linear-gradient(#f8f8f8, #f8f8f8);
 }
 .detail .setting .setUp{
 	position: absolute;
@@ -16,24 +16,18 @@
 	background-size: 100%;
 }
 .detail .setting .money{
-	font-size: .24rem;
+	font-size: .32rem;
 	color: #fff;
-	margin: 0 .4rem;
+  margin: 0 .2rem;
+  margin-top: .2rem;
 }
-.detail .setting .money .expend p{
-	font-size: .48rem;
-	font-weight: bold;
-	margin-top: .1rem;
-}
-.detail .setting .money .budget{
+.detail .setting .money ul{
 	display: flex;
-	margin-top: .8rem;
 }
-.detail .setting .money .budget div{
+.detail .setting .money ul li{
 	flex: 1;
-	color: #f1f1f1;
+  text-align: center;
 }
-.detail .setting .money .budget div span{
-	color: #fff;
-	font-size: .26rem;
+.detail .setting .money ul li p{
+  margin-top: .1rem;
 }

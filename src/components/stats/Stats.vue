@@ -14,9 +14,11 @@
 			<ul>
 				<li :class="{active:show}" @click="getType">
 					类别
+          <i :class="{active:show}"></i>
 				</li>
 				<li :class="{active:!show}" @click="getPay">
 					支付方式
+          <i class="diff" :class="{active:!show}"></i>
 				</li>
 			</ul>
 		</div>
@@ -47,7 +49,7 @@
 	import HeaderTop from '../public/HeaderTop'
 	import TypeDetail from './TypeDetail'
 	import PayDetail from './PayDetail'
-	
+
 	let years = []
 	for (var i = 2017; i <= 2050; i++) {
 		 years.push(i + '年');
@@ -56,7 +58,7 @@
 	for (var i= 1; i<=12; i++){
 		months.push(i + '月');
 	}
-	
+
 export default {
   name: '',
   data () {
@@ -85,7 +87,7 @@ export default {
           className: 'slot1',
           textAlign: 'center',
 					defaultIndex: 2
-        }, 
+        },
 				{
           flex: 1,
           values: months,
@@ -141,7 +143,7 @@ export default {
 			this.popVisible = false;
 		},
 		// 封装
-		
+
 		getType() {
 			this.show = true;
 				if(this.isTrue == true){
@@ -202,7 +204,7 @@ export default {
 					console.log(err);
 				})
 			}
-			
+
 		}
 	},
 	created() {

@@ -1,53 +1,65 @@
 .common{
-	margin: .62rem .4rem 0 .4rem;
+	width: 100%;
+  height: 3.6rem;
+  background-image: linear-gradient(45deg, #0396ff 0%, #abdcff 100%), linear-gradient(#000, #000);
 }
 .common .top{
 	display: flex;
 	font-size: .46rem;
-	color: #333;
-	font-weight: bold;
+	color: #fff;
+  margin: 0 .4rem;
+  padding-top: .6rem;
 }
-.common .top p{
+.common .top li{
 	flex: 1;
 }
-.common .top div{
-	flex: 1;
-	text-align: right;
+.common .top li.center{
+  text-align: center;
 }
-.common .top div i{
+.common .top li.right{
+  text-align: right;
+}
+.common .top li i{
 	display: inline-block;
 	width: .36rem;
 	height: .39rem;
 	background: url(../../src/assets/images/home/sum.png) no-repeat left top;
 	background-size: 100%;
-	margin-right: .26rem;
+  margin-bottom: -.08rem;
 }
-.common .top div span{
+.common .top li span{
 	display: inline-block;
 	width: .44rem;
 	height: .4rem;
 	background: url(../../src/assets/images/home/user.png) no-repeat left top;
 	background-size: 100%;
+  margin-bottom: -.12rem;
 }
 .common .sum{
-	width: 6.7rem;
-	height: 2.58rem;
-	margin-top: .4rem;
-	padding: .4rem .3rem;
-	box-sizing: border-box;
-	background: url(../../src/assets/images/home/bg_01.png) no-repeat left top;
-	background-size: 100%;
-	position: relative;
+  display: flex;
+  font-size: .32rem;
+  color: #fff;
+  margin-top: .7rem;
+}
+.common .sum li{
+  flex: 1;
+  text-align: center;
+}
+.common .sum li div{
+  margin-bottom: .1rem;
+}
+.common .sum li p{
+  margin-bottom: .1rem;
 }
 .common .sum .year{
 	font-size: .32rem;
 	color: #fff;
-	width: 2rem;
 	height: .42rem;
 	line-height: .42rem;
+  margin-bottom: 0;
 }
 .common .sum .year input{
-	width: 1.4rem;
+	width: 1rem;
 	color: #fff;
 	font-size: .32rem;
 	text-align: center;
@@ -64,26 +76,6 @@
 	background-size: 100%;
 	margin-bottom: .045rem;
 }
-.common .sum .all{
-	display: flex;
-	font-size: .24rem;
-	margin-top: .9rem;
-}
-.common .sum .all .money{
-	color: #fff;
-	flex: 2;
-}
-.common .sum .all .times{
-	color: #f1f1f1;
-	flex: 1
-}
-.common .sum .all p span{
-	font-size: .26rem;
-	font-weight: bold;
-}
-.common .sum .all .times span{
-	color: #fff;
-}
 /* 年份选择弹框 */
 .common .mint-popup-bottom{
 	width: 100%;
@@ -93,7 +85,7 @@
 	font-size: .32rem;
 	padding: .3rem .4rem;
 	border-bottom: 1px solid #eee;
-	font-weight: bold; 
+	font-weight: bold;
 }
 .common .mint-popup-bottom .frame_upper span{
 	flex: 1;

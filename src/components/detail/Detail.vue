@@ -7,18 +7,26 @@
 				</div>
 			</HeaderTop>
 			<div class="money">
-				<div class="expend">
-					<span>支出（元)</span>
-					<p>{{ totalAmount }}</p>
-				</div>
-				<div class="budget">
-					<div>
-						预算金额（元)：<span>{{ planPrice }}</span>
-					</div>
-					<div>
-						预算结余（元)：<span>{{ totalExpenses }}</span>
-					</div>
-				</div>
+        <ul>
+          <li>
+            <div>
+            	<span>支出</span>
+            	<p>{{ totalAmount }}</p>
+            </div>
+          </li>
+          <li>
+            <div>
+            	<span>预算</span>
+              <p>{{ planPrice }}</p>
+            </div>
+          </li>
+          <li>
+            <div>
+            	<span>结余</span>
+              <p>{{ totalExpenses }}</p>
+            </div>
+          </li>
+        </ul>
 			</div>
 		</div>
 		<Default v-show="isShow"/>
@@ -32,7 +40,7 @@
 	import Default from '../public/Default'
 	import Add from '../public/Add'
 	import Main from './Main'
-	
+
 export default {
   name: '',
   data () {

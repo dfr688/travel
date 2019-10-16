@@ -28,7 +28,6 @@
 .chooseType .type .chooseOption .left input{
 	color: #333;
 	font-size: .46rem;
-	font-weight: bold;
 	width: 2rem;
 }
 .chooseType .type .chooseOption .right{
@@ -39,14 +38,12 @@
 .chooseType .type .chooseOption .right span{
 	color: #ea5455;
 	font-size: .46rem;
-	font-weight: bold;
 	margin-right: .1rem
 }
 .chooseType .type .chooseOption .right input{
 	width: 1.5rem;
 	font-size: .46rem;
 	color: #ea5455;
-	font-weight: bold;
 }
 .chooseType .type .chooseOption .right input::-webkit-input-placeholder {
     color: #ea5455;
@@ -79,7 +76,6 @@
 .chooseType .type .calendar{
 	color: #333;
 	font-size: .32rem;
-	font-weight: bold;
 }
 .chooseType .type .calendar span{
 	width: .42rem;
@@ -123,7 +119,7 @@
 .chooseType .type .uploadPhoto div{
 	display: inline-block;
 	height: 1.4rem;
-} 
+}
 /* 支付方式弹框 */
 .chooseType .mint-popup div{
 	width: 7.5rem;

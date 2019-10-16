@@ -3,92 +3,93 @@
 }
 .content>ul{
 	margin: 0 .4rem;
+  margin-bottom: .4rem;
+}
+.content>ul>li{
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: .1rem;
 }
 .content>ul>li a{
-	display: flex;
+  display: block;
 	padding-top: .4rem;
+  color: #333;
 }
-.content>ul>li a .headPicture{
-	flex: 1;
-	margin-top: -.6rem;
+.content>ul>li a .headInfo{
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .36rem;
 }
-.content>ul>li a .headPicture span{
+.content>ul>li a .headInfo .left>span{
 	display: inline-block;
 	width: .68rem;
 	height: .68rem;
 	background: #eee;
 	border-radius: .6rem;
-	font-size: .24rem;
+	font-size: .38rem;
 	text-align: center;
 	line-height: .68rem;
+  vertical-align: top;
+  margin-top: .1rem;
+}
+.content>ul>li a .headInfo .left div{
+  display: inline-block;
+  margin-left: .1rem;
+}
+.content>ul>li a .headInfo .left div p{
+  margin-bottom: -.08rem;
+}
+.content>ul>li a .headInfo .left div span{
+  font-size: .26rem;
+  color: #999;
+}
+.content>ul>li a .headInfo .right{
+  color: #ea5455;
 }
 .content>ul>li a .text{
-	flex: 2;
-	font-size: .32rem;
+	font-size: .28rem;
+  display: flex;
+  margin-top: .4rem;
 }
-.content>ul>li a .text .up{
-	display: flex;
-}
-.content>ul>li a .text .up p{
-	font-size: .36rem;
-	color: #333;
-	font-weight: bold;
-}
-.content>ul>li a .text .up div{
+.content>ul>li a .text .left{
 	flex: 1;
 }
-.content>ul>li a .text .up .all_money{
-	flex: 1;
-	text-align: right;
-	height: .9rem;
-	line-height: 1.3rem;
-	color: #ea5455;
-}
-.content>ul>li a .text .up .all_money{
-	text-align: right;
-}
-.content>ul>li a .text .up div span{
-	color: #999;
-	font-size: .24rem;
-}
-.content>ul>li a .text .down{
-	width: 5.8rem;
-	height: 2.9rem;
-	margin-top: .3rem;
-}
-.content>ul>li a .text .down img{
-	width: 5.8rem;
-	height: 2.9rem;
-	object-fit:cover; 
+.content>ul>li a .text .left img{
+	width: 3rem;
+	height: 3rem;
+  border-radius: .1rem;
+	object-fit:cover;
 	pointer-events: none;/* 禁止长按图片出现手机自带菜单 */
 }
-.content>ul>li a .text ul li{
+.content>ul>li a .text .right{
+	flex: 2;
+  margin-left: .2rem;
+}
+.content>ul>li a .text .right ul li{
 	display: flex;
-	padding-top: .34rem;
+	padding-top: .2rem;
 }
-.content>ul>li a .text ul li .sign{
+.content>ul>li a .text .right ul li .sign{
 	flex: 1;
+  margin-right: .2rem;
 }
-.content>ul>li a .text ul li .detail{
+.content>ul>li a .text .right ul li .detail{
 	flex: 7;
 	display: flex;
-	padding-bottom: .3rem;
-	border-bottom: 1px solid #eee;
+  height: .56rem;
+  line-height: .56rem;
 }
-.content>ul>li a .text ul li .sign img{
+.content>ul>li a .text .right ul li .sign img{
 	width: .48rem;
 	height: .48rem;
 	pointer-events: none;/* 禁止长按图片出现手机自带菜单 */
 }
-.content>ul>li a .text ul li .detail span{
-	font-size: .32rem;
+.content>ul>li a .text .right ul li .detail span{
 	color: #333;
 	flex: 1;
 }
-.content>ul>li a .text ul li .detail p{
+.content>ul>li a .text .right ul li .detail p{
 	color: #ea5656;
-	font-size: .32rem;
-	font-weight: bold;
 	flex: 1;
 	text-align: right;
 }

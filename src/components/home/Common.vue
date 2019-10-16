@@ -1,18 +1,30 @@
 <template>
   <div class="common">
-		<div class="top">
-			<p>旅游记账</p>
-			<div>
-				<i @click='goStats("/stats")'></i><span @click='goMy("/my")'></span>
-			</div>
-		</div>
-		<div class="sum">
-			<p class="year" @click="chooseYear"><input type="text" v-model="text" readonly="readonly"><i></i></p>
-			<div class="all">
-				<p class="money">支出金额（元）：<span>{{totalPrice}}</span></p>
-				<p class="times">记账笔数：<span>{{ totalCount }}</span></p>
-			</div>
-		</div>
+    <ul class="top">
+      <li>
+        <span @click='goMy("/my")'></span>
+      </li>
+      <li class="center">
+        首页
+      </li>
+      <li class="right">
+        <i @click='goStats("/stats")'></i>
+      </li>
+    </ul>
+    <ul class="sum">
+      <li>
+        <div>年份</div>
+        <p class="year" @click="chooseYear"><input type="text" v-model="text" readonly="readonly"><i></i></p>
+      </li>
+      <li>
+        <p class="money">支出</p>
+        <span>{{totalPrice}}</span>
+      </li>
+      <li>
+        <p class="times">笔数</p>
+        <span>{{ totalCount }}</span>
+      </li>
+    </ul>
 		<!-- 年份选择弹框 -->
 		<mt-popup
 		  v-model="popupVisible"
@@ -26,17 +38,17 @@
 </template>
 
 <script>
-	
+
 	let years = []
  for (var i = 2017; i <= 2050; i++) {
 	 years.push(i);
  }
- years.unshift("所有年份");	
+ years.unshift("所有");
 export default {
   name: '',
   data () {
     return {
-      text: "所有年份",
+      text: "所有",
 	  value: "",
 	  years: [years],
 	  popupVisible: false,
@@ -50,7 +62,7 @@ export default {
     }
   },
   components: {
-	
+
   },
   props:[
 	  "totalPrice",

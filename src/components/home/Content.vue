@@ -3,32 +3,36 @@
 		<ul>
 			<li v-for="(listTourism,index) in listTourisms" :key="listTourism.id">
 				<router-link :to="{name:'detail',params:{id:listTourism.id}}">
-					<div class="headPicture">
-						<span>{{ listTourisms.length - index }}</span>
-					</div>
-					<div class="text">
-						<div class="up">
-							<div>
-								<p>{{ listTourism.name }}</p>
-								<span>{{ format(listTourism.createTime) }}</span>
-							</div>
-							<p class="all_money">¥{{ listTourism.totalAmount.toFixed(2) }}</p>
-						</div>
-						<div class="down">
-							<img :src="listTourism.photoUrl" alt=""/>
-						</div>
-						<ul>
-							<li v-for="(item,index) in listTourism.recordingInfoList">
-								<div class="sign">
-									<img :src="options[item.type - 1].src" alt=""/>
-								</div>
-								<div class="detail">
-									<span>{{ options[item.type - 1].title }}</span>
-									<p>{{ moneyTypes[item.moneyType-1].sign }}{{ item.amount }}</p>
-								</div>
-							</li>
-						</ul>
-					</div>
+          <div class="headInfo">
+            <div class="left">
+              <span>{{ listTourisms.length - index }}</span>
+              <div>
+              	<p>{{ listTourism.name }}</p>
+              	<span>{{ format(listTourism.createTime) }}</span>
+              </div>
+            </div>
+            <div class="right">
+              <p class="all_money">¥{{ listTourism.totalAmount.toFixed(2) }}</p>
+            </div>
+          </div>
+          <div class="text">
+            <div class="left">
+              <img :src="listTourism.photoUrl" alt=""/>
+            </div>
+            <div class="right">
+              <ul>
+              	<li v-for="(item,index) in listTourism.recordingInfoList">
+              		<div class="sign">
+              			<img :src="options[item.type - 1].src" alt=""/>
+              		</div>
+              		<div class="detail">
+              			<span>{{ options[item.type - 1].title }}</span>
+              			<p>{{ moneyTypes[item.moneyType-1].sign }}{{ item.amount }}</p>
+              		</div>
+              	</li>
+              </ul>
+            </div>
+          </div>
 				</router-link>
 			</li>
 		</ul>
@@ -155,13 +159,13 @@ export default {
     }
   },
 	components: {
-		
+
 	},
 	props:[
 		"listTourisms"
 	],
 	methods: {
-		
+
 	},
 	computed: {
 		allPrice() {
@@ -176,7 +180,7 @@ export default {
 		}
 	},
 	created() {
-		
+
 	}
 }
 </script>

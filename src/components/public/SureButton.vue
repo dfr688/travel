@@ -46,7 +46,7 @@ export default {
 		text-align: center;
 		color: #fff;
 		font-size: .36rem;
-		background-image: linear-gradient(0deg, #ea5455 0%, #f7976c 100%), linear-gradient(#f8f8f8, #f8f8f8);
+		background-image: linear-gradient(0deg, #0396ff 0%, #abdcff 100%), linear-gradient(#f8f8f8, #f8f8f8);
 		border-radius: .1rem;
 	}
 </style>

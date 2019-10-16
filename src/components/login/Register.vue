@@ -7,10 +7,10 @@
 		</Com>
 		<ul>
 			<li>
-				<input type="text" placeholder="请输入手机号码" v-model="phone"/>
+				<input type="tel" placeholder="请输入手机号码" v-model="phone"/>
 			</li>
 			<li class="code">
-				<input type="text" placeholder="请输入短信验证码" v-model="code"/>
+				<input type="tel" placeholder="请输入短信验证码" v-model="code"/>
 				<div>
 					<Vcode :phone="phone"/>
 				</div>
@@ -31,8 +31,8 @@
 	import Vcode from '../public/Vcode'
 	import SureButton from '../public/SureButton'
 	import { Toast } from 'mint-ui';
-	
-	
+
+
 export default {
   name: '',
   data () {
@@ -102,6 +102,6 @@ export default {
 		margin-top: .2rem;
 	}
 	.register .privacy a{
-		color: #ea5656;
+		color: #0396ff;
 	}
 </style>

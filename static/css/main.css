@@ -1,11 +1,9 @@
 .main .chartShow{
-	width: 6.7rem;
-	height: 5.04rem;
+	width: 100%;
+	height: 4rem;
 	background-color: #fff;
-	box-shadow: 0px 5px 15px 1px rgba(2, 0, 0, 0.15);
-	border-radius: .1rem;
-	margin: 0 auto;
-	margin-top: -1rem;
+	margin: 0 .4rem;
+  margin-top: .4rem;
 }
 .main .chartShow .chart{
 	width: 100%;
@@ -13,25 +11,17 @@
 }
 .main .detailList{
 	margin: 0 .4rem;
-	padding-top: .4rem;
 	border-bottom: 1px solid #eee;
+  padding-top: .4rem;
 }
 .main .detailList:last-child{
 	border-bottom: none;
 }
-.main .detailList .date_money{
-	display: flex; 
-	font-size: .26rem;
-	color: #999;
-	margin-bottom: .5rem; 
+.main .height_20{
+  width: 100%;
+  height: .2rem;
+  background: #f8f8f8;
 }
-.main .detailList .date_money span{
-	flex: 1;
-}
-.main .detailList .date_money p{
-	flex: 1;
-	text-align: right;
-} 
 .main .detailList .content>li{
 	display: flex;
 	margin-bottom: .3rem;

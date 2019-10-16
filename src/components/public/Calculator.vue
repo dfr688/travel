@@ -240,7 +240,6 @@ export default {
 		text-align: center;
 		font-size: .46rem;
 		color: #333;
-		font-weight: bold;
 	}
 	.calculator .wrap li:nth-child(4){
 		margin-top: -.1rem;

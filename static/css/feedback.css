@@ -11,7 +11,6 @@
 .feedback .type p{
 	font-size: .36rem;
 	color: #333;
-	font-weight: bold;
 }
 .feedback .type div{
 	font-size: .32rem;
@@ -38,7 +37,6 @@
 .feedback .suggest p{
 	font-size: .36rem;
 	color: #333;
-	font-weight: bold;
 }
 .feedback .suggest div{
 	font-size: .3rem;
@@ -62,7 +60,6 @@
 .feedback .contact p{
 	font-size: .36rem;
 	color: #333;
-	font-weight: bold;
 }
 .feedback .contact div{
 	margin-top: .3rem;
@@ -75,7 +72,7 @@
 
 /* 修改input的默认样式 */
 input[type='radio']{
-    display:none; 
+    display:none;
 }
 input[type='radio'] + label:before{
 	content: "";
@@ -86,7 +83,7 @@ input[type='radio'] + label:before{
 	background: url(../../src/assets/images/my/unchecked.png) no-repeat left top;
 	background-size: 100%;
 }
- 
+
 input[type='radio']:checked+label:before{
    	background: url(../../src/assets/images/my/checked.png) no-repeat left top;
    	background-size: 100%;

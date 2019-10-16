@@ -38,14 +38,14 @@ export default {
 		// 点击年份发送请求
 		getYear(val) {
 			this.year = val;
-			if(this.year == "所有年份"){
+			if(this.year == "所有"){
 				this.year = 0;
 			}
 			let token = localStorage.getItem("token");
 			// console.log(token);
 			this.baseJs.ajaxReq("/tourism/api/listTourism",{year:this.year},"get",token)
 			.then(res => {
-				console.log(res);
+				// console.log(res);
 				if(res.code != 200){
 					Toast('请重新登录！');
 				}else{
